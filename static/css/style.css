@@ -1,0 +1,368 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+/* CSS for navbar */
+.navbar {
+  margin: 15px 30px; /* Adjust the margin-top to 0 */
+  color: white;
+  padding: 10px 0;
+  color: #05444f;
+  border-bottom: 1px solid #05444f;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #10a881;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: navy;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #e84342;
+}
+
+#search-form {
+  display: flex;
+  align-items: center;
+}
+
+#search {
+  width: 70%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#search:focus {
+  outline: none;
+}
+
+#search[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#search[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* CSS for search results */
+#search-results {
+  list-style: none;
+  padding: 0;
+}
+
+#search-results li {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.contanier-up {
+  display: flex;
+  align-items: center;
+}
+
+/* CSS for image container */
+.image-container {
+  text-align: center; /* Align the image to the center */
+  margin-top: 20px; /* Add some top margin for spacing */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure the image doesn't exceed the container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Add border radius for rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  max-width: 100%;
+  height: auto;
+}
+.heading {
+  flex: 1;
+  text-align: center;
+  color: #333;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  font-style: italic; /* Make the text italic */
+}
+
+/* CSS for footer */
+.footer {
+  background-color: #10a881;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-line {
+  border: none;
+  border-top: 1px solid #fff;
+  margin: 10px auto;
+  width: 50%;
+}
+
+.product-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.product {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.product h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buy-button,
+.cart-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.cart-button {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.buy-button:hover,
+.cart-button:hover {
+  background-color: #0056b3;
+}
+/* registration.css */
+
+/* Container styles */
+.registration-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+.registration-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form group styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label styles */
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Input styles */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Button styles */
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+.login-container {
+  width: 300px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/* Additional CSS for product display */
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.product-card h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-card .product-description {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.product-card .product-price {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.product-card .button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-card button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.product-card .buy-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.product-card .cart-button {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
